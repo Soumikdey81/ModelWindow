@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Model Window</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body>
+    <main class="w-screen h-screen bg-green-100 relative box-border">
+      <div
+        class="grid grid-cols-1 sm:grid-cols-3 grid-rows-3 sm:grid-rows-3 gap-4 p-4"
+      >
+        <button
+          class="button px-4 py-2 text-white bg-green-500 font-bold rounded-lg"
+        >
+          Slide Window 1
+        </button>
+        <button
+          class="button px-4 py-2 text-white bg-green-500 font-bold rounded-lg"
+        >
+          Slide Window 2
+        </button>
+        <button
+          class="button px-4 py-2 text-white bg-green-500 font-bold rounded-lg"
+        >
+          Slide Window 3
+        </button>
+      </div>
+      <div
+        class="model hidden w-1/2 h-2/3 bg-slate-100 px-10 py-5 rounded-lg border-2 border-black absolute inset-0 m-auto z-10"
+      >
+        <button class="close absolute top-5 right-10">
+          <i class="fa-solid fa-xmark text-xl"></i>
+        </button>
+        <h1 class="mt-10 mb-5 font-bold text-2xl">I'm a model window</h1>
+        <p class="text-md text-justify">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum iusto
+          corrupti nisi sint nihil ratione nesciunt natus doloribus illo alias,
+          dicta harum? Illum vel exercitationem, et sapiente iste magnam nihil.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. In minima
+          itaque reiciendis? Praesentium quam obcaecati ipsa amet, laborum odit
+          cumque deserunt modi neque labore blanditiis eum aliquid aspernatur
+          velit. Similique?Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Tempora assumenda cum molestias ratione labore aut repudiandae
+          voluptate tenetur laboriosam optio facere corporis minima id, autem
+          deserunt? Suscipit explicabo quo similique. Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Totam quae consectetur dicta officiis
+          amet distinctio nihil, excepturi facilis autem molestias hic, deleniti
+          laborum illum, dignissimos sequi at quis quam numquam.
+        </p>
+      </div>
+      <div class="hidden overlay absolute inset-0 bg-black bg-opacity-60"></div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
