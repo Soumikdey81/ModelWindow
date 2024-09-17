@@ -1,0 +1,15 @@
+{
+  "name": "modelwindow",
+  "version": "1.0.0",
+  "description": "Model Window",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tailwindcss -i ./src/tailwind.css -o ./public/style.css --watch"
+  },
+  "author": "Soumik Dey",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.11"
+  }
+}
